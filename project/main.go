@@ -2,18 +2,27 @@
 // Click here and start typing.
 package main
 
-import "fmt"
+import ("fmt" 
+        "math"
+		)
 
 func main() {
-	fmt.Println("Hello")
-	fmt.Println("1 + 1 = ", 1 + 1)
-	fmt.Println("1 + 1 =", 1.0 + 1.0)
-	fmt.Println(len("Hello World"))
-    fmt.Println("Hello World"[1])
-    fmt.Println("Hello " + "World")
-	fmt.Println(true && true)
-    fmt.Println(true && false)
-    fmt.Println(true || true)
-    fmt.Println(true || false)
-    fmt.Println(!true)
+     var a,b,c,d float64
+	 	 fmt.Println("a=")
+	 fmt.Scanf("%v \n", &a)
+	 	 fmt.Println("b=")
+	 fmt.Scanf("%v \n", &b)
+	 	 fmt.Println("c=")
+	 fmt.Scanf("%v \n", &c)
+	  	 d=b*b-4*a*c
+	 	 fmt.Println("\n")
+	 if d>0 {
+	   fmt.Println("koren № 1=", (-1*b-math.Pow(d,0.5))/(2*a))
+	   fmt.Println("koren № 2=", (-1*b+math.Pow(d,0.5))/(2*a))
+	 }else if d==0 {
+	   fmt.Println("koren =", (-1*b-math.Pow(d,0.5))/(2*a))
+	 }else if d<0 {
+	   fmt.Println("kornei net ")
+	 }
+	     
 }
